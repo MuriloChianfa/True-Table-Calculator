@@ -1,11 +1,13 @@
 ﻿using System;
 
 
+
 /// _____________________ ///
 ///                       ///
 ///  Writed by Murilo >.< ///
 ///                       ///
 /// _____________________ ///
+
 
 
 namespace CalculadoraDeMatrizes
@@ -26,21 +28,13 @@ namespace CalculadoraDeMatrizes
             Console.Clear();
             Console.WriteLine("░░░░░▒▒▒▒▒▒▒▓▓▓ Writed by Murilo >.< ▓▓▓▒▒▒▒▒▒▒░░░░░\n");
             Console.WriteLine("Selecione o Tamanho da Matriz:");
-            Console.WriteLine("1 - 2x2\n2 - 2x3\n3 - 3x2\n4 - 3x3\n\n0 - Sair");
+            Console.WriteLine("1 - 2x2\n2 - 3x3\n\n0 - Sair");
             option = int.Parse(Console.ReadLine());
             if (option == 1)
             {
                 Matriz2x2();
             }
             else if (option == 2)
-            {
-                Matriz2x3();
-            }
-            else if (option == 3)
-            {
-                Matriz3x2();
-            }
-            else if (option == 4)
             {
                 Matriz3x3();
             }
@@ -57,17 +51,32 @@ namespace CalculadoraDeMatrizes
 
         public static void Matriz2x2()
         {
-
-        }
-
-        public static void Matriz2x3()
-        {
-
-        }
-
-        public static void Matriz3x2()
-        {
-
+            Console.WriteLine("A11");
+            value11 = int.Parse(Console.ReadLine());
+            Console.WriteLine("A12");
+            value12 = int.Parse(Console.ReadLine());
+            Console.WriteLine("A21");
+            value21 = int.Parse(Console.ReadLine());
+            Console.WriteLine("A22");
+            value22 = int.Parse(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine($"{value11} {value12}\n{value21} {value22}\n");
+            Console.WriteLine($"({(value11 * value22)})  -  ({(value12 * value21)})\n");
+            result = (value11 * value22) - (value12 * value21);
+            Console.WriteLine($"O Resultado é de: {result}\n"); //escreve no console o resultado da variavel result
+            Console.WriteLine("Você deseja ir ao menu ?");
+            Console.WriteLine("S - Sim\nN - Não\n");
+            exit = Console.ReadLine(); //atribui o caracter digitado a variavel exit
+            //caso o caracter digitado for s ou S ele retorna a funcao main
+            if (exit == "s" | exit == "S")
+            {
+                Main();
+            }
+            //senao ele chama a funcao exit
+            else
+            {
+                Exit();
+            }
         }
 
         public static void Matriz3x3()
@@ -92,7 +101,7 @@ namespace CalculadoraDeMatrizes
             value33 = int.Parse(Console.ReadLine());
             Console.Clear();
             Console.WriteLine($"{value11} {value12} {value13} | {value11} {value12}\n{value21} {value22} {value23} | {value21} {value22}\n{value31} {value32} {value33} | {value31} {value32}\n");
-            Console.WriteLine($"{-1* value13 * value22 * value31} {-1 *value11 * value23 * value32} {-1 *value12 * value21 * value33} + {value11 * value22 * value33} {value12 * value23 * value31} {value13 * value21 * value32}\n");
+            Console.WriteLine($"({-1* value13 * value22 * value31} {-1 *value11 * value23 * value32} {-1 *value12 * value21 * value33})  +  ({value11 * value22 * value33} {value12 * value23 * value31} {value13 * value21 * value32})\n");
             Console.WriteLine($"{(-1 * value13 * value22 * value31) + (-1 * value11 * value23 * value32) + (-1 * value12 * value21 * value33)} + {(value11 * value22 * value33) + (value12 * value23 * value31) + (value13 * value21 * value32)}\n");
             result = ((value11 * value22 * value33) + (value12 * value23 * value31) + (value13 * value21 * value32)) - ((value13 * value22 * value31) + (value11 * value23 * value32) + (value12 * value21 * value33));
             Console.WriteLine($"O Resultado é de: {result}\n"); //escreve no console o resultado da variavel result

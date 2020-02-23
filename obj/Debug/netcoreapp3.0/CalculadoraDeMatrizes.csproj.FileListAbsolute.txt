@@ -9,3 +9,14 @@ C:\Users\Murilo\source\repos\CalculadoraDeMatrizes\obj\Debug\netcoreapp3.0\Calcu
 C:\Users\Murilo\source\repos\CalculadoraDeMatrizes\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
 C:\Users\Murilo\source\repos\CalculadoraDeMatrizes\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
 C:\Users\Murilo\source\repos\CalculadoraDeMatrizes\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.csprojAssemblyReference.cache
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.exe
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.deps.json
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.runtimeconfig.json
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.runtimeconfig.dev.json
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.csprojAssemblyReference.cache
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.AssemblyInfoInputs.cache
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.AssemblyInfo.cs
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
+C:\Users\Murilo\source\repos\MuriloChianfa\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
