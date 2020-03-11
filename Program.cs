@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+
 
 
 
@@ -26,7 +28,6 @@ namespace CalculadoraDeMatrizes
         private static void Main()
         {
             Console.Clear();
-            Console.WriteLine("░░░░░▒▒▒▒▒▒▒▓▓▓ Writed by Murilo >.< ▓▓▓▒▒▒▒▒▒▒░░░░░\n");
             Console.WriteLine("Selecione o Tamanho da Matriz:");
             Console.WriteLine("1 - 2x2\n2 - 3x3\n\n0 - Sair");
             option = int.Parse(Console.ReadLine());
@@ -44,7 +45,9 @@ namespace CalculadoraDeMatrizes
             }
             else
             {
+                Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
+                Thread.Sleep(3500);
                 Main();
             }
         }
@@ -126,7 +129,22 @@ namespace CalculadoraDeMatrizes
 
         private static void Exit() //funcao exit
         {
-            Console.Clear(); //limpa o console
+            Console.Clear();
+            Console.WriteLine("Exiting The Program.");
+            Thread.Sleep(500);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program..");
+            Thread.Sleep(500);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program...");
+            Thread.Sleep(700);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program....");
+            Thread.Sleep(800);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program.....");
+            Thread.Sleep(800);
+            Console.Clear();
             System.Environment.Exit(1); //sai do programa
         }
     }
