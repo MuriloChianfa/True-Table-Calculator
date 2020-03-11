@@ -11,22 +11,23 @@ namespace CalculadoraDeMatrizes
 {
     class Program
     {
-        //variaveis \/
+        //variables \/
         #region Variables
-        public static string exit, option;
-        public static int matrixResult;
+        public static string exit, option, errorOption;
+        public static int currentExponent = 1, matrixResult, exponent;
         public static int value11, value12, value13;
         public static int value21, value22, value23;
         public static int value31, value32, value33;
 
         public static float result, value1, value2;
+
         #endregion
 
-        //funcoes \/
+        //functions \/
         public static void Main(){
             Console.Clear();
             Console.WriteLine("Selecione o Que Deseja:");
-            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matrix\n\n0 - Sair");
+            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matriz\n\n0 - Sair");
             option = Console.ReadLine();
 
             if (option == "1")
@@ -46,69 +47,100 @@ namespace CalculadoraDeMatrizes
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
                 Thread.Sleep(3500);
-                Matrix();
+                Main();
             }
         }
 
         #region Calculator
         public static void Calculator(){
             Console.Clear();
-            Console.WriteLine("Menu.\n");
+            Console.WriteLine("Menu\n");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
-            Console.WriteLine("4 - Divisão\n");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Potencia\n");
+            Console.WriteLine("0 - Voltar");
 
             option = Console.ReadLine();
             
-            if(option == "0"){
+            if(option != "0" & option != "5"){
+                Console.Clear();
+                Console.WriteLine("Digite o Primeiro Valor");
+                value1 = float.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Digite o Segundo Valor");
+                value2 = float.Parse(Console.ReadLine());
+                Console.Clear();
+
+                if (option == "1")
+                {
+                    result = value1 + value2;
+                    Console.Clear();
+                    ContinueToCalculator2(result);
+                }
+                else if (option == "2")
+                {
+                    result = value1 - value2;
+                    Console.Clear();
+                    ContinueToCalculator2(result);
+                }
+                else if (option == "3")
+                {
+                    result = value1 * value2;
+                    Console.Clear();
+                    ContinueToCalculator2(result);
+                }
+                else if (option == "4")
+                {
+                    result = value1 / value2;
+                    Console.Clear();
+                    ContinueToCalculator2(result);
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Opção Invalida... Desculpe-nos");
+                    Thread.Sleep(3500);
+                    Calculator();
+                }
+            }
+            else if(option == "5"){
+                Console.Clear();
+                Console.WriteLine("Digite o Valor Da Base: ");
+                value1 = float.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Digite o Valor Do Expoente(Apenas Numeros Inteiros): ");
+                exponent = int.Parse(Console.ReadLine());
+
+                if(exponent == 2){
+                    result = value1 * value1;
+                    Console.Clear();
+                    Console.WriteLine(result);
+                }
+                else if(exponent != 2){
+                    result = value1;
+                    Console.Clear();
+                    Console.WriteLine($"OPERAÇÂO: {value1}^{exponent}\n");
+                    for(currentExponent = 1; currentExponent < exponent; currentExponent++){
+                        Console.WriteLine($"{result} * {value1}");
+                        result = result * value1;
+                        Console.WriteLine($"{result}\n");
+                    }
+                    Console.WriteLine("Pressione ENTER Para Continuar...");
+                    Console.ReadKey();
+                    Calculator();
+                }
+                else{
+                    Console.Clear();
+                    Console.WriteLine("Opção Invalida... Desculpe-nos");
+                    Thread.Sleep(3500);
+                    Calculator();
+                }
+
+            }
+            else{
                 Main();
-            }
-
-            Console.Clear();
-            Console.WriteLine("Digite o Primeiro Valor");
-            value1 = float.Parse(Console.ReadLine());
-            Console.Clear();
-            Console.WriteLine("Digite o Segundo Valor");
-            value2 = float.Parse(Console.ReadLine());
-            Console.Clear();
-
-
-            if (option == "1")
-            {
-                result = value1 + value2;
-                Console.Clear();
-                ContinueToCalculator2(result);
-            }
-            else if (option == "2")
-            {
-                result = value1 - value2;
-                Console.Clear();
-                ContinueToCalculator2(result);
-            }
-            else if (option == "3")
-            {
-                result = value1 * value2;
-                Console.Clear();
-                ContinueToCalculator2(result);
-            }
-            else if (option == "4")
-            {
-                result = value1 / value2;
-                Console.Clear();
-                ContinueToCalculator2(result);
-            }
-            else if (option == "0")
-            {
-                Main();
-            }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
-                Calculator();
             }
         }
 
@@ -118,7 +150,8 @@ namespace CalculadoraDeMatrizes
             Console.WriteLine("1 - Somar");
             Console.WriteLine("2 - Subtrair");
             Console.WriteLine("3 - Multiplicar");
-            Console.WriteLine("4 - Dividir\n");
+            Console.WriteLine("4 - Dividir");
+            Console.WriteLine("5 - Elevar\n");
             Console.WriteLine("0 - Voltar");
 
             option = Console.ReadLine();
@@ -227,6 +260,7 @@ namespace CalculadoraDeMatrizes
             Console.WriteLine("Selecione o Tamanho da Matriz:");
             Console.WriteLine("1 - 2x2\n2 - 3x3\n\n0 - Voltar");
             option = Console.ReadLine();
+
             if (option == "1")
             {
                 Matrix2x2();
@@ -307,8 +341,8 @@ namespace CalculadoraDeMatrizes
         }
 
         public static void RedirectToMatrix(float matrixResult){
-            Console.WriteLine($"O Resultado é de: {matrixResult}\n"); //escreve no console o resultado da variavel matrixResult
-            Console.WriteLine("Você deseja ir ao menu ?");
+            Console.WriteLine($"O Resultado é De: {matrixResult}\n"); //escreve no console o resultado da variavel matrixResult
+            Console.WriteLine("Você Deseja Calcular Mais Alguma Matriz ?");
             Console.WriteLine("S - Sim\nN - Não\n");
             exit = Console.ReadLine(); //atribui o caracter digitado a variavel exit
             //caso o caracter digitado for s ou S ele retorna a funcao main
@@ -318,7 +352,7 @@ namespace CalculadoraDeMatrizes
             }
             //senao ele chama a funcao 
             else if(exit == "n" | exit == "N"){
-                Exit();
+                Main();
             }
             else
             {
