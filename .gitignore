@@ -3,3 +3,15 @@
 ################################################################################
 
 /.vs/CalculadoraDeMatrizes/v16/Server/sqlite3/db.lock
+obj/project.assets.json
+obj/Debug/netcoreapp3.0/CalculadoraDeMatrizes.pdb
+obj/Debug/netcoreapp3.0/CalculadoraDeMatrizes.dll
+obj/Debug/netcoreapp3.0/CalculadoraDeMatrizes.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.0/CalculadoraDeMatrizes.csproj.FileListAbsolute.txt
+obj/Debug/netcoreapp3.0/CalculadoraDeMatrizes.assets.cache
+obj/CalculadoraDeMatrizes.csproj.nuget.g.props
+obj/CalculadoraDeMatrizes.csproj.nuget.dgspec.json
+obj/CalculadoraDeMatrizes.csproj.nuget.cache
+bin/Debug/netcoreapp3.0/CalculadoraDeMatrizes.runtimeconfig.dev.json
+bin/Debug/netcoreapp3.0/CalculadoraDeMatrizes.pdb
+bin/Debug/netcoreapp3.0/CalculadoraDeMatrizes.dll

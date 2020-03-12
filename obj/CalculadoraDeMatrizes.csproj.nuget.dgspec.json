@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {}
+    "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {
+    "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
+        "projectUniqueName": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
         "projectName": "CalculadoraDeMatrizes",
-        "projectPath": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
-        "packagesPath": "C:\\Users\\lorkg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\obj\\",
+        "projectPath": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
+        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lorkg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

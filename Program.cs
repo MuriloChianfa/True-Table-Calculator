@@ -26,7 +26,7 @@ namespace CalculadoraDeMatrizes
         public static void Main(){
             Console.Clear();
             Console.WriteLine("Selecione o Que Deseja:");
-            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matriz\n4 - Calculadora de juros simples e composto\n\n0 - Sair");
+            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matriz\n3 - Converter \n4 - Calculadora de juros simples e composto\n\n0 - Sair");
             option = Console.ReadLine();
 
             if (option == "1")
@@ -37,6 +37,10 @@ namespace CalculadoraDeMatrizes
             {
                 Matrix();
             }
+            else if (option == "3")
+            {
+                Converter();
+            } 
             else if (option == "4")
             {
                 Interest();
@@ -404,7 +408,8 @@ namespace CalculadoraDeMatrizes
              
         #endregion
 
-        private static void Exit() //funcao exit
+
+        public static void Exit() //funcao exit
         {
             Console.Clear();
             Console.WriteLine("Exiting The Program.");
@@ -424,5 +429,157 @@ namespace CalculadoraDeMatrizes
             Console.Clear();
             System.Environment.Exit(1); //sai do programa
         }
+         public static void Converter()
+        {
+            Console.Clear();
+            Console.WriteLine("Selecione qual o tipo de conversão você deseja fazer:\n");
+            Console.WriteLine("1 - Temperatura");
+            Console.WriteLine("2 - Distância");
+            option = Console.ReadLine();
+
+            if (option == "1"){
+                Console.Clear();
+                Console.WriteLine("Escolha a conversão a ser feita\n");
+                Console.WriteLine("1 - Celsius -> Fahrenheit");
+                Console.WriteLine("2 - Fahrenheit -> Celsius\n");
+                Console.WriteLine("3 - Celsius -> Kelvin");
+                Console.WriteLine("4 - Kelvin -> Celsius\n");
+                Console.WriteLine("5 - Fahrenheit -> Kelvin");
+                Console.WriteLine("6 - Kelvin -> Fahrenheit"); 
+                option = Console.ReadLine();
+
+                if (option == "1"){
+                    CF();
+                }
+                else if (option == "2"){
+                    FC();
+                }
+                else if (option == "3")
+                {
+                    CK();
+                }
+                else if (option == "4")
+                {
+                    KC();
+                }
+                else if (option == "5")
+                {
+                    FK();
+                }
+                else if (option == "6")
+                {
+                    KF();
+                }
+            }
+            else if (option == "2"){
+                Console.Clear();
+                Console.WriteLine("Escolha a conversão a ser feita\n");
+                //Continuar daqui -------------------------------------------------------------------------------------------------
+            }
+            
+        }
+
+        public static void FC()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Fahrenheit(°F) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = (value1 - 32)/ 1.8f;
+            Console.Clear();
+            Console.WriteLine(value1 + "°F são " + result + "°C\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+
+        }
+        public static void CF()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Celsius(°C) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = (value1 * 1.8f) + 32;
+            Console.Clear();
+            Console.WriteLine(value1 + "°C são " +  result + "°F\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+            
+        }
+
+        public static void CK()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Celsius(°C) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = value1 + 273;
+            Console.WriteLine(value1 + "°C são " +  result + "K\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+        }
+
+        public static void KC()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Kelvin(K) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = value1 - 273.15f;
+            Console.WriteLine(value1 + "K são " +  result + "°C\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+        }
+        
+        public static void FK()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Fahrenheit(°F) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = (value1 - 32)/ 1.8f + (273.15f); 
+            Console.Clear();
+            Console.WriteLine(value1 + "°F são " + result + "K\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+        }
+
+        public static void KF()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite a temperatura em Kelvin(K) a ser convertida");
+            value1 = float.Parse(Console.ReadLine());
+            result = (value1 - 273.15f)* 1.8f + (32);
+            Console.WriteLine(value1 + "K são " +  result + "°F\n\n");
+            Console.WriteLine("O que você deseja fazer?");
+            Console.WriteLine("1 - Converter outro valor");
+            Console.WriteLine("2 - Sair");
+            option = Console.ReadLine();
+            if (option == "1"){
+             Converter();
+            }
+        }
+
     }
 }
+
+    
