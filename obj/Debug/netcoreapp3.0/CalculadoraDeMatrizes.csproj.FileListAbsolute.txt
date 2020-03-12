@@ -31,3 +31,14 @@ C:\Users\Murilo\Desktop\Nova pasta\GITHUB\CalculadoraDeMatriz\obj\Debug\netcorea
 C:\Users\Murilo\Desktop\Nova pasta\GITHUB\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.AssemblyInfo.cs
 C:\Users\Murilo\Desktop\Nova pasta\GITHUB\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
 C:\Users\Murilo\Desktop\Nova pasta\GITHUB\CalculadoraDeMatriz\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.exe
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.deps.json
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.runtimeconfig.json
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.runtimeconfig.dev.json
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
+C:\Users\lorkg\Desktop\AdvancedCalculator\bin\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
+C:\Users\lorkg\Desktop\AdvancedCalculator\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.csprojAssemblyReference.cache
+C:\Users\lorkg\Desktop\AdvancedCalculator\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.AssemblyInfoInputs.cache
+C:\Users\lorkg\Desktop\AdvancedCalculator\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.AssemblyInfo.cs
+C:\Users\lorkg\Desktop\AdvancedCalculator\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.dll
+C:\Users\lorkg\Desktop\AdvancedCalculator\obj\Debug\netcoreapp3.0\CalculadoraDeMatrizes.pdb
