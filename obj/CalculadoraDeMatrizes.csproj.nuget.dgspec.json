@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {}
+    "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj": {
+    "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
+        "projectUniqueName": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
         "projectName": "CalculadoraDeMatrizes",
-        "projectPath": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\Documents\\GitHub\\AdvancedCalculator\\obj\\",
+        "projectPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
+        "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,14 +55,6 @@
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.0.3, 3.0.3]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {

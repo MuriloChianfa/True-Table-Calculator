@@ -26,7 +26,7 @@ namespace CalculadoraDeMatrizes
         public static void Main(){
             Console.Clear();
             Console.WriteLine("Selecione o Que Deseja:");
-            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matriz\n3 - Converter \n4 - Calculadora de juros simples e composto\n\n0 - Sair");
+            Console.WriteLine("1 - Calculadora\n2 - Calculadora De Matriz\n3 - Converter \n4 - Calculadora de juros simples e composto\n5 - Tabuada\n6 - Calculadora De Media\n7 - Calculadora De IMC\n8 - Calculadora De Area e Volume\n\n0 - Sair");
             option = Console.ReadLine();
 
             if (option == "1")
@@ -45,6 +45,22 @@ namespace CalculadoraDeMatrizes
             {
                 Interest();
             }
+            else if (option == "5")
+            {
+                MultiplicationTable();
+            }
+            else if (option == "6")
+            {
+                Average();
+            }
+            else if (option == "7")
+            {
+                IMC();
+            }
+            else if (option == "8")
+            {
+                Area();
+            }
             else if (option == "0")
             {
                 Exit();
@@ -53,7 +69,7 @@ namespace CalculadoraDeMatrizes
             {
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Main();
             }
         }
@@ -108,7 +124,7 @@ namespace CalculadoraDeMatrizes
                 {
                     Console.Clear();
                     Console.WriteLine("Opção Invalida... Desculpe-nos");
-                    Thread.Sleep(3500);
+                    Thread.Sleep(2500);
                     Calculator();
                 }
             }
@@ -123,7 +139,11 @@ namespace CalculadoraDeMatrizes
                 if(exponent == 2){
                     result = value1 * value1;
                     Console.Clear();
-                    Console.WriteLine(result);
+                    Console.WriteLine($"OPERAÇÂO: {value1}^{exponent}\n");
+                    Console.WriteLine($"{value1} * {value1}\n{result}\n");
+                    Console.WriteLine("Pressione ENTER Para Continuar...");
+                    Console.ReadKey();
+                    Calculator();
                 }
                 else if(exponent != 2){
                     result = value1;
@@ -141,7 +161,7 @@ namespace CalculadoraDeMatrizes
                 else{
                     Console.Clear();
                     Console.WriteLine("Opção Invalida... Desculpe-nos");
-                    Thread.Sleep(3500);
+                    Thread.Sleep(2500);
                     Calculator();
                 }
 
@@ -214,7 +234,7 @@ namespace CalculadoraDeMatrizes
             {
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Calculator2(result);
             }
         }
@@ -234,7 +254,7 @@ namespace CalculadoraDeMatrizes
             else{
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Calculator();
             }
         }
@@ -254,7 +274,7 @@ namespace CalculadoraDeMatrizes
             else{
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Continue(result);
             }
         }
@@ -285,7 +305,7 @@ namespace CalculadoraDeMatrizes
             {
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Matrix();
             }
         }
@@ -366,7 +386,7 @@ namespace CalculadoraDeMatrizes
             {
                 Console.Clear();
                 Console.WriteLine("Opção Invalida... Desculpe-nos");
-                Thread.Sleep(3500);
+                Thread.Sleep(2500);
                 Console.Clear();
                 RedirectToMatrix(matrixResult);
             }
@@ -378,57 +398,35 @@ namespace CalculadoraDeMatrizes
         //abaixo é uma
         public static void Interest()
         {
+            Console.Clear();
             Console.WriteLine($"1 - Juros Simples\n2 - Juros compostos");
 
             option=Console.ReadLine();
-                if (option == "1")
-                {
-                    Console.Clear();
-                    Console.WriteLine("Digite o capital inicial : ");
-                    value1=float.Parse(Console.ReadLine());
-                    Console.Clear();
-                    Console.WriteLine("Digite a taxa: ");
-                    value2=float.Parse(Console.ReadLine());
-                    value2=value2/100;
-                    Console.Clear();
-                    Console.WriteLine("Digite o tempo em meses: ");
-                    value3=float.Parse(Console.ReadLine());
-                    result=value1*value2*value3+value1;
-                    Console.WriteLine($"{result}");
-                }
-                    else
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Está operação está em desenvolvimento");
-                    }
-                
-
-            
+            if (option == "1")
+            {
+                Console.Clear();
+                Console.WriteLine("Digite o capital inicial : ");
+                value1=float.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Digite a taxa: ");
+                value2=float.Parse(Console.ReadLine());
+                value2=value2/100;
+                Console.Clear();
+                Console.WriteLine("Digite o tempo em meses: ");
+                value3=float.Parse(Console.ReadLine());
+                result=value1*value2*value3+value1;
+                Console.Clear();
+                Console.WriteLine($"O seu Resultado é de: {result}");
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Está operação está em desenvolvimento");
+            }
         }  
-             
         #endregion
 
-
-        public static void Exit() //funcao exit
-        {
-            Console.Clear();
-            Console.WriteLine("Exiting The Program.");
-            Thread.Sleep(500);
-            Console.Clear();
-            Console.WriteLine("Exiting The Program..");
-            Thread.Sleep(500);
-            Console.Clear();
-            Console.WriteLine("Exiting The Program...");
-            Thread.Sleep(700);
-            Console.Clear();
-            Console.WriteLine("Exiting The Program....");
-            Thread.Sleep(800);
-            Console.Clear();
-            Console.WriteLine("Exiting The Program.....");
-            Thread.Sleep(800);
-            Console.Clear();
-            System.Environment.Exit(1); //sai do programa
-        }
+        #region Converter
          public static void Converter()
         {
             Console.Clear();
@@ -579,6 +577,64 @@ namespace CalculadoraDeMatrizes
             }
         }
 
+        #endregion
+
+        #region MultiplicationTable
+        public static void MultiplicationTable(){
+            Console.Clear();
+
+            Console.WriteLine("┌─────────────┐\t+-------------+\t┌─────────────┐\t+-------------+\t┌─────────────┐\t+-------------+\t┌─────────────┐\t+-------------+");
+            Console.WriteLine("│Tabuada do 2 │\t¦Tabuada do 3 ¦\t│Tabuada do 4 │\t¦Tabuada do 5 ¦\t│Tabuada do 6 │\t¦Tabuada do 7 ¦\t│Tabuada do 8 │\t¦Tabuada do 9 ¦");
+            Console.WriteLine("└─────────────┘\t+-------------+\t└─────────────┘\t+-------------+\t└─────────────┘\t+-------------+\t└─────────────┘\t+-------------+");
+            for (int tabuada=1;tabuada<=10;tabuada++)
+            {
+            Console.WriteLine("2*{0}={1}\t\t3*{0}={2}\t\t4*{0}={3}\t\t5*{0}={4}\t\t6*{0}={5}\t\t7*{0}={6}\t\t8*{0}={7}\t\t9*{0}={8}",tabuada,2*tabuada,3*tabuada,4*tabuada,5*tabuada,6*tabuada,7*tabuada,8*tabuada,9*tabuada);
+            }
+
+            Console.WriteLine("\nPress ENTER to Continue...");
+            Console.ReadKey();
+            Main();
+        }
+        #endregion
+
+        #region Average
+        public static void Average(){
+
+        }
+        #endregion
+
+        #region IMC
+        public static void IMC(){
+
+        }
+        #endregion
+
+        #region Area
+        public static void Area(){
+            
+        }
+        #endregion
+
+        public static void Exit() //funcao exit
+        {
+            Console.Clear();
+            Console.WriteLine("Exiting The Program.");
+            Thread.Sleep(500);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program..");
+            Thread.Sleep(500);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program...");
+            Thread.Sleep(700);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program....");
+            Thread.Sleep(800);
+            Console.Clear();
+            Console.WriteLine("Exiting The Program.....");
+            Thread.Sleep(800);
+            Console.Clear();
+            System.Environment.Exit(1); //sai do programa
+        }
     }
 }
 
