@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Murilo\\.nuget\\packages\\": {}
+    "C:\\Users\\lorkg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
+      "projectUniqueName": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
       "projectName": "CalculadoraDeMatrizes",
-      "projectPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
-      "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\obj\\",
+      "projectPath": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\CalculadoraDeMatrizes.csproj",
+      "packagesPath": "C:\\Users\\lorkg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lorkg\\Desktop\\AdvancedCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lorkg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,6 +61,14 @@
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
           }
         ],
         "frameworkReferences": {
