@@ -22,7 +22,7 @@ namespace CalculadoraDeMatrizes
         public static int value31, value32, value33;
 
         public static float result, value1, value2,value3;
-        public static float num1,num2,num3;
+        public static double num1,num2,num3,result2,result3;
             //testando
         #endregion 
         //functions \/
@@ -419,21 +419,27 @@ namespace CalculadoraDeMatrizes
                 value3=float.Parse(Console.ReadLine());
                 result=value1*value2*value3+value1;
                 Console.Clear();
-                Console.WriteLine($"O seu Resultado é de: {result}");
+                Console.WriteLine("O seu Resultado é de: {0:C2} , e seu capital inicial foi de: {1:C2}", result , value1);
             }
             else
             {
                 
                 Console.Clear();
                 Console.WriteLine("Digite o capital inicial: ");
-                num1=float.Parse(Console.ReadLine());
+                num1=double.Parse(Console.ReadLine());
                 Console.Clear();
                 Console.WriteLine("Digite a taxa: ");
-                num2=float.Parse(Console.ReadLine());
+                num2=double.Parse(Console.ReadLine());
+                num2=num2/100;
                 Console.Clear();
                 Console.WriteLine("Digite o tempo em meses: ");
-                num3=float.Parse(Console.ReadLine());
-                Console.WriteLine($"{result}");
+                num3=int.Parse(Console.ReadLine());
+                result2=num1;
+                for(int time=0 ; time<num3; time++)
+                {
+                    result2=result2*(1+num2);
+                }
+                Console.WriteLine("O capital final é de: {0:C2}, e seu capital inicial foi de {1:C2}", result2, num1);
             }
         }  
         #endregion
