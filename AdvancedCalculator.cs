@@ -4,6 +4,8 @@ using System.Threading;
 /// _____________________ ///
 ///                       ///
 ///  Writed by Murilo >.< ///
+///  Writed by Fernando >.< ///
+///  Writed by Bruno >.< ///
 ///                       ///
 /// _____________________ ///
 
@@ -611,7 +613,7 @@ namespace CalculadoraDeMatrizes
 
         #region Area
         public static void Area(){
-            
+
         }
         #endregion
 
@@ -637,5 +639,3 @@ namespace CalculadoraDeMatrizes
         }
     }
 }
-
-    

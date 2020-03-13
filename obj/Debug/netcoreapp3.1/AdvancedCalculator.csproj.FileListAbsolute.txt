@@ -1,0 +1,11 @@
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.exe
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.deps.json
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.runtimeconfig.json
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.runtimeconfig.dev.json
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.dll
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\bin\Debug\netcoreapp3.1\AdvancedCalculator.pdb
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\obj\Debug\netcoreapp3.1\AdvancedCalculator.csprojAssemblyReference.cache
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\obj\Debug\netcoreapp3.1\AdvancedCalculator.AssemblyInfoInputs.cache
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\obj\Debug\netcoreapp3.1\AdvancedCalculator.AssemblyInfo.cs
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\obj\Debug\netcoreapp3.1\AdvancedCalculator.dll
+C:\Users\Murilo\Desktop\Nova pasta\GITHUB\AdvancedCalculator\obj\Debug\netcoreapp3.1\AdvancedCalculator.pdb

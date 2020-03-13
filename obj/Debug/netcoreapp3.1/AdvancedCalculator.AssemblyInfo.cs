@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraDeMatrizes")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AdvancedCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("CalculadoraDeMatrizes")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraDeMatrizes")]
+[assembly: System.Reflection.AssemblyProductAttribute("AdvancedCalculator")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AdvancedCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

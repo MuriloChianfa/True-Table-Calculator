@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\Murilo\\.nuget\\packages\\": {}
@@ -13,25 +13,25 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
-      "projectName": "CalculadoraDeMatrizes",
-      "projectPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\CalculadoraDeMatrizes.csproj",
+      "projectUniqueName": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\AdvancedCalculator\\AdvancedCalculator.csproj",
+      "projectName": "AdvancedCalculator",
+      "projectPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\AdvancedCalculator\\AdvancedCalculator.csproj",
       "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\CalculadoraDeMatriz\\obj\\",
+      "outputPath": "C:\\Users\\Murilo\\Desktop\\Nova pasta\\GITHUB\\AdvancedCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp3.1": {
           "projectReferences": {}
         }
       },
@@ -42,7 +42,7 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.0": {
+      "netcoreapp3.1": {
         "imports": [
           "net461",
           "net462",
@@ -53,16 +53,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.0.1, 3.0.1]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.3, 3.0.3]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
