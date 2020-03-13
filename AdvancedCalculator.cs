@@ -22,6 +22,7 @@ namespace CalculadoraDeMatrizes
         public static int value31, value32, value33;
 
         public static float result, value1, value2,value3;
+        public static float num1,num2,num3;
             //testando
         #endregion 
         //functions \/
@@ -422,8 +423,17 @@ namespace CalculadoraDeMatrizes
             }
             else
             {
+                
                 Console.Clear();
-                Console.WriteLine("Está operação está em desenvolvimento");
+                Console.WriteLine("Digite o capital inicial: ");
+                num1=float.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Digite a taxa: ");
+                num2=float.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("Digite o tempo em meses: ");
+                num3=float.Parse(Console.ReadLine());
+                Console.WriteLine($"{result}");
             }
         }  
         #endregion
