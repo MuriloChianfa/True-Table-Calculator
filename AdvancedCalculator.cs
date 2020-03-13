@@ -489,7 +489,8 @@ namespace CalculadoraDeMatrizes
             }
             else if (option == "2"){
                 Console.Clear();
-                Console.WriteLine("Escolha a conversão a ser feita\n");
+                Console.WriteLine("Desculpe,esta operação está em construção");
+                //Console.WriteLine("Escolha a conversão a ser feita\n");
                 //Continuar daqui -------------------------------------------------------------------------------------------------
             }
             
@@ -561,6 +562,19 @@ namespace CalculadoraDeMatrizes
              Converter();
             }
         }
+
+        public static void Voltar(string option)
+        {
+            if (option == "sim" | option == "Sim"){
+                Converter();
+            }
+            else{
+                Console.Clear();
+                Console.WriteLine("Essa opção não existe");
+                Thread.Sleep(2000);
+                Voltar(option);
+            }
+        }
         
         public static void FK()
         {
@@ -586,13 +600,13 @@ namespace CalculadoraDeMatrizes
             value1 = float.Parse(Console.ReadLine());
             result = (value1 - 273.15f)* 1.8f + (32);
             Console.WriteLine(value1 + "K são " +  result + "°F\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
+            Console.WriteLine("Deseja fazer outra operação?");
+            Console.WriteLine("Sim");
+            Console.WriteLine("Não");
             option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
+
+            Voltar(option);
+            
         }
 
         #endregion
@@ -622,8 +636,39 @@ namespace CalculadoraDeMatrizes
         #endregion
 
         #region IMC
-        public static void IMC(){
-
+        public static void IMC()
+        {
+            double weight, height,imc;
+            Console.Clear();
+            Console.WriteLine("Cálculadora de Índice de Massa Corporal\n");
+            Console.WriteLine("Digite seu peso em Kg");
+            weight = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a sua altura em metros\n(Exemplo: 1,70)");
+            height = double.Parse(Console.ReadLine());
+            imc = (weight)/(height*height);
+            Console.Clear();
+            if (imc <= 18.5){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está abaixo do peso ideal",imc);
+            }
+            else if (imc>=18.6 & imc<=24.9){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está no peso ideal",imc);
+            }
+            else if (imc>=25 & imc<=29.9){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está acima do peso ideal",imc);
+            }
+            else if (imc>=30 & imc <=34.9){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 1",imc);
+            }
+            else if (imc>=35 & imc<=39.9){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 2",imc);
+            }
+            else if (imc>=40){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 3 (Obesidade mórbida)",imc);
+            }
+            else{
+                Console.WriteLine("Erro!");
+            }
+            
         }
         #endregion
 
