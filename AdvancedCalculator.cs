@@ -545,6 +545,19 @@ namespace CalculadoraDeMatrizes
              Converter();
             }
         }
+
+        public static void Voltar(string option)
+        {
+            if (option == "sim" | option == "Sim"){
+                Converter();
+            }
+            else{
+                Console.Clear();
+                Console.WriteLine("Essa opção não existe");
+                Thread.Sleep(2000);
+                Voltar(option);
+            }
+        }
         
         public static void FK()
         {
@@ -570,13 +583,13 @@ namespace CalculadoraDeMatrizes
             value1 = float.Parse(Console.ReadLine());
             result = (value1 - 273.15f)* 1.8f + (32);
             Console.WriteLine(value1 + "K são " +  result + "°F\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
+            Console.WriteLine("Deseja fazer outra operação?");
+            Console.WriteLine("Sim");
+            Console.WriteLine("Não");
             option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
+
+            Voltar(option);
+            
         }
 
         #endregion
