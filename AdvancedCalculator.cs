@@ -15,13 +15,13 @@ namespace CalculadoraDeMatrizes
     {
         //variables \/
         #region Variables
-        public static string exit, option, errorOption;
-        public static int currentExponent = 1, matrixResult, exponent;
+        public static string exit, option, errorOption, name;
+        public static int currentExponent = 1, matrixResult, exponent, possibilities;
         public static int value11, value12, value13;
         public static int value21, value22, value23;
         public static int value31, value32, value33;
 
-        public static float result, value1, value2,value3;
+        public static float result, value1, value2, value3, sum, note;
         public static double num1,num2,num3,result2,result3;
             //testando
         #endregion 
@@ -402,44 +402,80 @@ namespace CalculadoraDeMatrizes
         public static void Interest()
         {
             Console.Clear();
-            Console.WriteLine($"1 - Juros Simples\n2 - Juros compostos");
 
-            option=Console.ReadLine();
+            Console.WriteLine($"1 - Juros Simples\n2 - Juros compostos\n\n0 - Voltar\n");
+            option = Console.ReadLine();
+
             if (option == "1")
             {
                 Console.Clear();
+
                 Console.WriteLine("Digite o capital inicial : ");
-                value1=float.Parse(Console.ReadLine());
+                value1 = float.Parse(Console.ReadLine());
+
                 Console.Clear();
+
                 Console.WriteLine("Digite a taxa: ");
-                value2=float.Parse(Console.ReadLine());
-                value2=value2/100;
+                value2 = float.Parse(Console.ReadLine());
+
+                value2 = value2/100;
+
                 Console.Clear();
+
                 Console.WriteLine("Digite o tempo em meses: ");
                 value3=float.Parse(Console.ReadLine());
+
                 result=value1*value2*value3+value1;
+
                 Console.Clear();
-                Console.WriteLine("O seu Resultado é de: {0:C2} , e seu capital inicial foi de: {1:C2}", result , value1);
+
+                Console.WriteLine("O seu Resultado é de: {0:C2} , e seu capital inicial foi de: {1:C2}\n", result , value1);
+
+                Console.WriteLine("Press ENTER To Continue...");
+                Console.ReadKey();
+                Interest();
             }
-            else
+            else if(option == "0")
             {
-                
+                Main();
+            }
+            else if(option == "2")
+            {
                 Console.Clear();
+
                 Console.WriteLine("Digite o capital inicial: ");
                 num1=double.Parse(Console.ReadLine());
+
                 Console.Clear();
+
                 Console.WriteLine("Digite a taxa: ");
                 num2=double.Parse(Console.ReadLine());
+
                 num2=num2/100;
+
                 Console.Clear();
+
                 Console.WriteLine("Digite o tempo em meses: ");
                 num3=int.Parse(Console.ReadLine());
+
                 result2=num1;
+
                 for(int time=0 ; time<num3; time++)
                 {
                     result2=result2*(1+num2);
                 }
-                Console.WriteLine("O capital final é de: {0:C2}, e seu capital inicial foi de {1:C2}", result2, num1);
+
+                Console.WriteLine("O capital final é de: {0:C2}, e seu capital inicial foi de {1:C2}\n", result2, num1);
+
+                Console.WriteLine("Press ENTER To Continue...");
+                Console.ReadKey();
+                Interest();
+            }
+            else{
+                Console.Clear();
+                Console.WriteLine("Invalid Number...");
+                Thread.Sleep(1500);
+                Interest();
             }
         }  
         #endregion
@@ -450,7 +486,8 @@ namespace CalculadoraDeMatrizes
             Console.Clear();
             Console.WriteLine("Selecione qual o tipo de conversão você deseja fazer:\n");
             Console.WriteLine("1 - Temperatura");
-            Console.WriteLine("2 - Distância");
+            Console.WriteLine("2 - Distância\n");
+            Console.WriteLine("0 - Voltar\n");
             option = Console.ReadLine();
 
             if (option == "1"){
@@ -461,7 +498,8 @@ namespace CalculadoraDeMatrizes
                 Console.WriteLine("3 - Celsius -> Kelvin");
                 Console.WriteLine("4 - Kelvin -> Celsius\n");
                 Console.WriteLine("5 - Fahrenheit -> Kelvin");
-                Console.WriteLine("6 - Kelvin -> Fahrenheit"); 
+                Console.WriteLine("6 - Kelvin -> Fahrenheit\n");
+                Console.WriteLine("0 - Voltar\n"); 
                 option = Console.ReadLine();
 
                 if (option == "1"){
@@ -486,12 +524,32 @@ namespace CalculadoraDeMatrizes
                 {
                     KF();
                 }
+                else if (option == "0")
+                {
+                    Converter();
+                }
+                else{
+                    Console.Clear();
+                    Console.WriteLine("Invalid Number...");
+                    Thread.Sleep(2000);
+                    Converter();
+                }
             }
             else if (option == "2"){
                 Console.Clear();
                 Console.WriteLine("Desculpe,esta operação está em construção");
-                //Console.WriteLine("Escolha a conversão a ser feita\n");
-                //Continuar daqui -------------------------------------------------------------------------------------------------
+                Thread.Sleep(2000);
+                Converter();
+            }
+            else if (option == "0")
+            {
+                Main();
+            }
+            else{
+                Console.Clear();
+                Console.WriteLine("Invalid Number...");
+                Thread.Sleep(2000);
+                Converter();
             }
             
         }
@@ -499,116 +557,95 @@ namespace CalculadoraDeMatrizes
         public static void FC()
         {
             Console.Clear();
+
             Console.WriteLine("Digite a temperatura em Fahrenheit(°F) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
-            result = (value1 - 32)/ 1.8f;
-            Console.Clear();
-            Console.WriteLine(value1 + "°F são " + result + "°C\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
-            option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
 
+            result = (value1 - 32)/ 1.8f;
+
+            Console.Clear();
+
+            Console.WriteLine(value1 + "°F são " + result + "°C\n\n");
+
+            ReturnConverter();
         }
         public static void CF()
         {
             Console.Clear();
+
             Console.WriteLine("Digite a temperatura em Celsius(°C) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
+
             result = (value1 * 1.8f) + 32;
+
             Console.Clear();
+
             Console.WriteLine(value1 + "°C são " +  result + "°F\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
-            option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
+
+            ReturnConverter();
             
         }
 
         public static void CK()
         {
             Console.Clear();
+
             Console.WriteLine("Digite a temperatura em Celsius(°C) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
+
             result = value1 + 273;
+
             Console.WriteLine(value1 + "°C são " +  result + "K\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
-            option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
+
+            ReturnConverter();
         }
 
         public static void KC()
         {
             Console.Clear();
+
             Console.WriteLine("Digite a temperatura em Kelvin(K) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
-            result = value1 - 273.15f;
-            Console.WriteLine(value1 + "K são " +  result + "°C\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
-            option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
-        }
 
-        public static void Voltar(string option)
-        {
-            if (option == "sim" | option == "Sim"){
-                Converter();
-            }
-            else{
-                Console.Clear();
-                Console.WriteLine("Essa opção não existe");
-                Thread.Sleep(2000);
-                Voltar(option);
-            }
+            result = value1 - 273.15f;
+
+            Console.WriteLine(value1 + "K são " +  result + "°C\n\n");
+
+            ReturnConverter();
         }
-        
         public static void FK()
         {
             Console.Clear();
+            
             Console.WriteLine("Digite a temperatura em Fahrenheit(°F) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
-            result = (value1 - 32)/ 1.8f + (273.15f); 
-            Console.Clear();
-            Console.WriteLine(value1 + "°F são " + result + "K\n\n");
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("1 - Converter outro valor");
-            Console.WriteLine("2 - Sair");
-            option = Console.ReadLine();
-            if (option == "1"){
-             Converter();
-            }
-        }
 
+            result = (value1 - 32)/ 1.8f + (273.15f); 
+
+            Console.Clear();
+
+            Console.WriteLine(value1 + "°F são " + result + "K\n\n");
+
+            ReturnConverter();
+        }
         public static void KF()
         {
             Console.Clear();
+
             Console.WriteLine("Digite a temperatura em Kelvin(K) a ser convertida");
             value1 = float.Parse(Console.ReadLine());
+
             result = (value1 - 273.15f)* 1.8f + (32);
+
             Console.WriteLine(value1 + "K são " +  result + "°F\n\n");
-            Console.WriteLine("Deseja fazer outra operação?");
-            Console.WriteLine("Sim");
-            Console.WriteLine("Não");
-            option = Console.ReadLine();
 
-            Voltar(option);
-            
+            ReturnConverter();
         }
-
+        public static void ReturnConverter(){
+            Console.WriteLine("Press ENTER To Continue...");
+            Console.ReadKey();
+            Converter();
+        }
         #endregion
 
         #region MultiplicationTable
@@ -630,8 +667,63 @@ namespace CalculadoraDeMatrizes
         #endregion
 
         #region Average
-        public static void Average(){
+        public static void Average()
+        {
+            Console.Clear();
 
+            Console.WriteLine("Qual o Seu Nome ? (0 - Voltar)\n");
+            name = Console.ReadLine();
+
+            if(name == "0"){
+                Main();
+            }
+
+            Console.Clear();
+
+            Console.WriteLine("Quantas Notas Você Possui ?\n");
+            possibilities = int.Parse(Console.ReadLine());
+            int[] numberPossibilities = new int[possibilities];
+
+            if (possibilities < 10)
+            {
+                float[] Notes = new float[possibilities];
+                for (int i = 0; i < possibilities; i++)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Qual a Sua {0}° Nota ?\n", i + 1);
+                    note = float.Parse(Console.ReadLine());
+                    Notes[i] = note;
+                }
+
+                if (name != "")
+                {
+                    Console.Clear();
+                    Console.WriteLine("{0}, A Media Entre:\n", name);
+                    foreach (var number in Notes)
+                    {
+                        sum += number;
+                        Console.WriteLine("\t{0}", number);
+                    }
+                    result = sum / Notes.Length;
+                    Console.WriteLine("\nÉ De: {0}", result);
+                    Console.WriteLine("\nPress ENTER to Continue...");
+                    Console.ReadKey();
+                    Average();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Enter With a Valid Name...");
+                    Thread.Sleep(1500);
+                }
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Invalid Number...");
+                Thread.Sleep(1500);
+                Average();
+            }
         }
         #endregion
 
@@ -639,36 +731,61 @@ namespace CalculadoraDeMatrizes
         public static void IMC()
         {
             double weight, height,imc;
+
             Console.Clear();
+
             Console.WriteLine("Cálculadora de Índice de Massa Corporal\n");
-            Console.WriteLine("Digite seu peso em Kg");
+            Console.WriteLine("Digite seu peso em Kg: (0 - Voltar)");
             weight = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite a sua altura em metros\n(Exemplo: 1,70)");
-            height = double.Parse(Console.ReadLine());
-            imc = (weight)/(height*height);
+
+            if(weight == 0){
+                Main();
+            }
+
             Console.Clear();
-            if (imc <= 18.5){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está abaixo do peso ideal",imc);
+
+            Console.WriteLine("Digite a sua altura em metros\n(Exemplo: 1,70)\n");
+            height = double.Parse(Console.ReadLine());
+
+            imc = weight/(height*height);
+
+            Console.Clear();
+
+            if (imc <= 18.5 & imc > 15){
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está abaixo do peso ideal\n",imc);
+                ReturnIMC();
             }
             else if (imc>=18.6 & imc<=24.9){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está no peso ideal",imc);
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está no peso ideal\n",imc);
+                ReturnIMC();
             }
             else if (imc>=25 & imc<=29.9){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está acima do peso ideal",imc);
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está acima do peso ideal\n",imc);
+                ReturnIMC();
             }
             else if (imc>=30 & imc <=34.9){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 1",imc);
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 1\n",imc);
+                ReturnIMC();
             }
             else if (imc>=35 & imc<=39.9){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 2",imc);
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 2\n",imc);
+                ReturnIMC();
             }
             else if (imc>=40){
-                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 3 (Obesidade mórbida)",imc);
+                Console.WriteLine("Seu IMC é de {0:N2}\nVocê está em obesidade grau 3 (Obesidade mórbida)\n",imc);
+                ReturnIMC();
             }
             else{
                 Console.WriteLine("Erro!");
+                Thread.Sleep(2000);
+                IMC();
             }
-            
+        }
+
+        public static void ReturnIMC(){
+            Console.WriteLine("Press ENTER To Continue...");
+            Console.ReadKey();
+            IMC();
         }
         #endregion
 
