@@ -21,9 +21,10 @@ namespace CalculadoraDeMatrizes
         public static int value21, value22, value23;
         public static int value31, value32, value33;
 
+        public static bool haveName = false;
+
         public static float result, value1, value2, value3, sum, note;
-        public static double num1,num2,num3,result2,result3;
-            //testando
+        public static double num1, num2, num3, result2, result3;
         #endregion 
         //functions \/
         public static void Main(){
@@ -154,7 +155,7 @@ namespace CalculadoraDeMatrizes
                     Console.WriteLine($"OPERAÇÂO: {value1}^{exponent}\n");
                     for(currentExponent = 1; currentExponent < exponent; currentExponent++){
                         Console.WriteLine($"{result} * {value1}");
-                        result = result * value1;
+                        result *= value1;
                         Console.WriteLine($"{result}\n");
                     }
                     Console.WriteLine("Pressione ENTER Para Continuar...");
@@ -671,18 +672,27 @@ namespace CalculadoraDeMatrizes
         {
             Console.Clear();
 
+            if(!haveName){
             Console.WriteLine("Qual o Seu Nome ? (0 - Voltar)\n");
             name = Console.ReadLine();
-
-            if(name == "0"){
-                Main();
             }
+
+            if(name != null)
+                haveName = true;
+
+            if(name == "0")
+                Main();
+            
 
             Console.Clear();
 
-            Console.WriteLine("Quantas Notas Você Possui ?\n");
+            Console.WriteLine("Quantas Notas Você Possui ? (0 - Voltar)\n");
             possibilities = int.Parse(Console.ReadLine());
             int[] numberPossibilities = new int[possibilities];
+            
+            if (possibilities == 0)
+                Main();
+
 
             if (possibilities < 10)
             {
