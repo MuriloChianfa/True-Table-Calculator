@@ -25,11 +25,20 @@ namespace AdvancedCalculator {
 
             Console.WriteLine("\n0 - Sair\n");
 
-            int.TryParse(Console.ReadLine(), out int num);
+            bool succes = int.TryParse(Console.ReadLine(), out int num);
+            if(!succes){
+                Console.Clear();
+                Console.WriteLine("Opção Invalida... Desculpe-nos");
+                Thread.Sleep(2500);
+                Program.Main();
+            }
+
             if(num == 0)
                 Exit();
+
             bool numValido = num > 0 && num <= Funcs.Count;
             num = numValido ? num - 1 : Funcs.Count - 1;
+            
 
             if(!numValido){
                 Console.Clear();
