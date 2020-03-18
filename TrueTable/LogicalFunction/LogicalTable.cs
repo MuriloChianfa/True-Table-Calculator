@@ -27,7 +27,9 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
         public static string[] nr4 = new[] { "F", "F", "T", "T", "F", "F", "T", "T", "F", "F", "T", "T", "F", "F", "T", "T"};
         public static string[] ns4 = new[] { "F", "T", "F", "T", "F", "T", "F", "T", "F", "T", "F", "T", "F", "T", "F", "T"};
         #endregion
-        
+        public static string[] result2Return = new string[4];
+        public static string[] result3Return = new string[8];
+        public static string[] result4Return = new string[16];
         public static void Exec(){
             Console.Clear();
 

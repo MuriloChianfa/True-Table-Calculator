@@ -3,13 +3,13 @@ using System.Threading;
 
 namespace AdvancedCalculator.TrueTable.NumericFunction {
     class NumericTable {
-        #region Array2
+        #region NumericArray2
         public static int[] p2 = new[] { 1, 1, 0, 0};
         public static int[] q2 = new[] { 1, 0, 1, 0};
         public static int[] np2 = new[] { 0, 0, 1, 1};
         public static int[] nq2 = new[] { 0, 1, 0, 1};
         #endregion
-        #region Array3
+        #region NumericArray3
         public static int[] p3 = new[] { 1, 1, 1, 1, 0, 0, 0, 0};
         public static int[] q3 = new[] { 1, 1, 0, 0, 1, 1, 0, 0};
         public static int[] r3 = new[] { 1, 0, 1, 0, 1, 0, 1, 0};
@@ -17,7 +17,7 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
         public static int[] nq3 = new[] { 0, 0, 1, 1, 0, 0, 1, 1};
         public static int[] nr3 = new[] { 0, 1, 0, 1, 0, 1, 0, 1};
         #endregion
-        #region Array4
+        #region NumericArray4
         public static int[] p4 = new[] { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
         public static int[] q4 = new[] { 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,};
         public static int[] r4 = new[] { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0};

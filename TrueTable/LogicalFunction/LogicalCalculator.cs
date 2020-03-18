@@ -3,18 +3,18 @@ using System.Threading;
 
 namespace AdvancedCalculator.TrueTable.LogicalFunction {
     class LogicalCalculator {
-        public static string condition1, condition2, resultValue;
-        public static int condition1value, condition2value, operators, result;
+        public static string condition1, condition2, result;
+        public static int operators;
         public static void Exec(){
             Console.Clear();
             Console.WriteLine("The 1st Condition is True or False ? (0 - Return)\n");
             Console.WriteLine("T - True\nF - False\n");
             condition1 = Console.ReadLine();
             if(condition1 == "t" | condition1 == "T"){
-                condition1value = 1;
+                condition1 = "T";
             }
             else if(condition1 == "f" | condition1 == "F"){
-                condition1value = 0;
+                condition1 = "F";
             }
             else if(condition1 == "0"){
                 LogicalMenu.Exec();
@@ -38,10 +38,10 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
             Console.WriteLine("T - True\nF - False\n");
             condition2 = Console.ReadLine();
             if(condition2 == "t" | condition2 == "T"){
-                condition2value = 1;
+                condition2 = "T";
             }
             else if(condition2 == "f" | condition2 == "F"){
-                condition2value = 0;
+                condition2 = "F";
             }
             else{
                 Console.Clear();
@@ -53,28 +53,28 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
 
             // AND
             if(operators == 1){
-                result = and(condition1value, condition2value);
-                Converter(result);
+                result = LogicalOperations.and(condition1, condition2);
+                Continue();
             }
             // OR
             else if(operators == 2){
-                result = or(condition1value, condition2value);
-                Converter(result);
+                result = LogicalOperations.or(condition1, condition2);
+                Continue();
             }
             // XOR
             else if(operators == 3){
-                result = xor(condition1value, condition2value);
-                Converter(result);
+                result = LogicalOperations.xor(condition1, condition2);
+                Continue();
             }
             // Implica
             else if(operators == 4){
-                result = ifthen(condition1value, condition2value);
-                Converter(result);
+                result = LogicalOperations.ifthen(condition1, condition2);
+                Continue();
             }
             // DUPLA IMPLICA
             else if(operators == 5){
-                result = ifonlyif(condition1value, condition2value);
-                Converter(result);
+                result = LogicalOperations.ifonlyif(condition1, condition2);
+                Continue();
             }
             else{
                 Console.Clear();
@@ -85,59 +85,12 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 Exec();
             }
         }
-
-        public static void Converter(int result){
-            if(result == 1){
-                resultValue = "T";
-                Continue(resultValue);
-            }
-            else if(result == 0){
-                resultValue = "F";
-                Continue(resultValue);
-            }
-            else{
-                Console.Clear();
-                Console.WriteLine("WhAt tHe FUck ?");
-                LogicalMenu.Exec();
-            }
-        }
-        public static void Continue(string resultValue){
+        public static void Continue(){
             Console.Clear();
-            Console.WriteLine("Your Result is: {0}\n\n", resultValue);
+            Console.WriteLine("Your Result is: {0}\n\n", result);
             Console.WriteLine("Press ENTER to continue...");
             Console.ReadKey();
             Exec();
-        }
-        public static int not(int condition1) {
-		if(condition1==0) return 1;
-		return 0;
-        }
-        public static int or(int condition1, int condition2) {
-            if(condition1==1 | condition2==1) return 1;
-            return 0;
-        }
-        public static int xor(int condition1, int condition2) {
-            if(condition1==1 & condition2==1){
-                return 0;
-            }
-            else if(condition1==0 & condition2==0){
-                return 0;
-            }
-            return 1;
-        }
-        public static int and(int condition1, int condition2) {
-            if(condition1==1 & condition2==1) return 1;
-            return 0;
-        }
-        public static int ifthen(int condition1, int condition2) {
-            if(condition1==0 | condition2==1) return 1;
-            return 0;
-        }
-        public static int ifonlyif(int condition1, int condition2) {
-            if((condition1==1 & condition2==1) | (condition1==0 & condition2==0)){
-                return 1;
-            }
-            return 0;
         }
     }
 }
