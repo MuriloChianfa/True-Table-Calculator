@@ -4,30 +4,32 @@ using System.Threading;
 namespace AdvancedCalculator.TrueTable.NumericFunction {
     class NumericTable {
         #region NumericArray2
-        public static int[] p2 = new[] { 1, 1, 0, 0};
-        public static int[] q2 = new[] { 1, 0, 1, 0};
-        public static int[] np2 = new[] { 0, 0, 1, 1};
-        public static int[] nq2 = new[] { 0, 1, 0, 1};
+        public static int[] A2 = new[] { 1, 1, 0, 0};
+        public static int[] B2 = new[] { 1, 0, 1, 0};
+        public static int[] nA2 = new[] { 0, 0, 1, 1};
+        public static int[] nB2 = new[] { 0, 1, 0, 1};
         #endregion
         #region NumericArray3
-        public static int[] p3 = new[] { 1, 1, 1, 1, 0, 0, 0, 0};
-        public static int[] q3 = new[] { 1, 1, 0, 0, 1, 1, 0, 0};
-        public static int[] r3 = new[] { 1, 0, 1, 0, 1, 0, 1, 0};
-        public static int[] np3 = new[] { 0, 0, 0, 0, 1, 1, 1, 1};
-        public static int[] nq3 = new[] { 0, 0, 1, 1, 0, 0, 1, 1};
-        public static int[] nr3 = new[] { 0, 1, 0, 1, 0, 1, 0, 1};
+        public static int[] A3 = new[] { 1, 1, 1, 1, 0, 0, 0, 0};
+        public static int[] B3 = new[] { 1, 1, 0, 0, 1, 1, 0, 0};
+        public static int[] C3 = new[] { 1, 0, 1, 0, 1, 0, 1, 0};
+        public static int[] nA3 = new[] { 0, 0, 0, 0, 1, 1, 1, 1};
+        public static int[] nB3 = new[] { 0, 0, 1, 1, 0, 0, 1, 1};
+        public static int[] nC3 = new[] { 0, 1, 0, 1, 0, 1, 0, 1};
         #endregion
         #region NumericArray4
-        public static int[] p4 = new[] { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
-        public static int[] q4 = new[] { 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,};
-        public static int[] r4 = new[] { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0};
-        public static int[] s4 = new[] { 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0};
-        public static int[] np4 = new[] { 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1};
-        public static int[] nq4 = new[] { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1};
-        public static int[] nr4 = new[] { 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1};
-        public static int[] ns4 = new[] { 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1};
+        public static int[] A4 = new[] { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
+        public static int[] B4 = new[] { 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,};
+        public static int[] C4 = new[] { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0};
+        public static int[] D4 = new[] { 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0};
+        public static int[] nA4 = new[] { 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1};
+        public static int[] nB4 = new[] { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1};
+        public static int[] nC4 = new[] { 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1};
+        public static int[] nD4 = new[] { 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1};
         #endregion
-        
+        public static int[] result2Return = new int[4];
+        public static int[] result3Return = new int[8];
+        public static int[] result4Return = new int[16];
         public static void Exec(){
             Console.Clear();
 
@@ -84,12 +86,12 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
             Console.WriteLine("¦   A  ¦ ¦   B  ¦ ¦  !A  ¦ ¦  !B  ¦");
             Console.WriteLine("+------+ +------+ +------+ +------+");
             Console.WriteLine("+------+ +------+ +------+ +------+");
-            for (int i = 0, j = 0, h = 0, k = 0; i < p2.Length; i++, j++, h++, k++)
+            for (int i = 0, j = 0, h = 0, k = 0; i < A2.Length; i++, j++, h++, k++)
             {
-                int condition = p2[i];
-                int condition2 = q2[j];
-                int condition3 = np2[h];
-                int condition4 = nq2[k];
+                int condition = A2[i];
+                int condition2 = B2[j];
+                int condition3 = nA2[h];
+                int condition4 = nB2[k];
                 Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦", condition, condition2, condition3, condition4);
             }
             Console.WriteLine("+------+ +------+ +------+ +------+\n");
@@ -102,14 +104,14 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
                 Console.WriteLine("¦   A  ¦ ¦   B  ¦ ¦   C  ¦ ¦  !A  ¦ ¦  !B  ¦ ¦  !C  ¦");
                 Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
                 Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
-            for (int i = 0, j = 0, h = 0, k = 0, l = 0, m = 0; i < p3.Length; i++, j++, h++, k++, l++, m++)
+            for (int i = 0, j = 0, h = 0, k = 0, l = 0, m = 0; i < A3.Length; i++, j++, h++, k++, l++, m++)
             {
-                int condition1 = p3[i];
-                int condition2 = q3[j];
-                int condition3 = r3[h];
-                int condition4 = np3[k];
-                int condition5 = nq3[l];
-                int condition6 = nr3[m];
+                int condition1 = A3[i];
+                int condition2 = B3[j];
+                int condition3 = C3[h];
+                int condition4 = nA3[k];
+                int condition5 = nB3[l];
+                int condition6 = nC3[m];
                 Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦ ¦   {4}  ¦ ¦   {5}  ¦", condition1, condition2, condition3, condition4, condition5, condition6);
             }
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+\n");
@@ -122,16 +124,16 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
             Console.WriteLine("¦   A  ¦ ¦   B  ¦ ¦   C  ¦ ¦   D  ¦ ¦  !A  ¦ ¦  !B  ¦ ¦  !C  ¦ ¦  !D  ¦");
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+ +------+ +------+");
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+ +------+ +------+");
-            for (int i = 0; i < p4.Length; i++)
+            for (int i = 0; i < A4.Length; i++)
             {
-                int condition1 = p4[i];
-                int condition2 = q4[i];
-                int condition3 = r4[i];
-                int condition4 = s4[i];
-                int condition5 = np4[i];
-                int condition6 = nq4[i];
-                int condition7 = nr4[i];
-                int condition8 = ns4[i];
+                int condition1 = A4[i];
+                int condition2 = B4[i];
+                int condition3 = C4[i];
+                int condition4 = D4[i];
+                int condition5 = nA4[i];
+                int condition6 = nB4[i];
+                int condition7 = nC4[i];
+                int condition8 = nD4[i];
                 Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦ ¦   {4}  ¦ ¦   {5}  ¦ ¦   {6}  ¦ ¦   {7}  ¦", condition1, condition2, condition3, condition4, condition5, condition6, condition7, condition8);
             }
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+ +------+ +------+\n");

@@ -92,7 +92,42 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 string condition2 = q2[j];
                 string condition3 = np2[h];
                 string condition4 = nq2[k];
-                Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦", condition, condition2, condition3, condition4);
+
+                Console.Write("¦   ");
+                if (condition == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition2 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition2);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition3 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition3);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition4 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition4);
+                Console.ResetColor();
+                Console.WriteLine("  ¦");
             }
             Console.WriteLine("+------+ +------+ +------+ +------+\n");
         }
@@ -112,7 +147,60 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 string condition4 = np3[k];
                 string condition5 = nq3[l];
                 string condition6 = nr3[m];
-                Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦ ¦   {4}  ¦ ¦   {5}  ¦", condition1, condition2, condition3, condition4, condition5, condition6);
+                
+                Console.Write("¦   ");
+                if (condition1 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition1);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition2 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition2);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition3 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition3);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition4 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition4);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition5 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition5);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition6 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition6);
+                Console.ResetColor();
+                Console.WriteLine("  ¦");
             }
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+\n");
         }
@@ -134,7 +222,78 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 string condition6 = nq4[i];
                 string condition7 = nr4[i];
                 string condition8 = ns4[i];
-                Console.WriteLine("¦   {0}  ¦ ¦   {1}  ¦ ¦   {2}  ¦ ¦   {3}  ¦ ¦   {4}  ¦ ¦   {5}  ¦ ¦   {6}  ¦ ¦   {7}  ¦", condition1, condition2, condition3, condition4, condition5, condition6, condition7, condition8);
+                
+                Console.Write("¦   ");
+                if (condition1 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition1);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition2 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition2);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition3 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition3);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition4 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition4);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition5 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition5);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition6 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition6);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition7 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition7);
+                Console.ResetColor();
+                Console.Write("  ¦ ");
+
+                Console.Write("¦   ");
+                if (condition8 == "T")
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else
+                    Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("{0}", condition8);
+                Console.ResetColor();
+                Console.WriteLine("  ¦");
             }
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+ +------+ +------+\n");
         }

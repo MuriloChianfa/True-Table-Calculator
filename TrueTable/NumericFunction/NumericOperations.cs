@@ -4,6 +4,14 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
 		if(condition1==0) return 1;
 		return 0;
         }
+        public static int and(int condition1, int condition2) {
+            if(condition1==1 & condition2==1) return 1;
+            return 0;
+        }
+        public static int nand(int condition1, int condition2) {
+            if(condition1==1 & condition2==1) return 0;
+            return 1;
+        }
         public static int or(int condition1, int condition2) {
             if(condition1==1 | condition2==1) return 1;
             return 0;
@@ -29,14 +37,6 @@ namespace AdvancedCalculator.TrueTable.NumericFunction {
                 return 1;
             }
             return 0;
-        }
-        public static int and(int condition1, int condition2) {
-            if(condition1==1 & condition2==1) return 1;
-            return 0;
-        }
-        public static int nand(int condition1, int condition2) {
-            if(condition1==1 & condition2==1) return 0;
-            return 1;
         }
     }
 }
