@@ -136,9 +136,9 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
             Console.Clear();
 
             Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
-                Console.WriteLine("¦   p  ¦ ¦   q  ¦ ¦   r  ¦ ¦  ~p  ¦ ¦  ~q  ¦ ¦  ~r  ¦");
-                Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
-                Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
+            Console.WriteLine("¦   p  ¦ ¦   q  ¦ ¦   r  ¦ ¦  ~p  ¦ ¦  ~q  ¦ ¦  ~r  ¦");
+            Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
+            Console.WriteLine("+------+ +------+ +------+ +------+ +------+ +------+");
             for (int i = 0, j = 0, h = 0, k = 0, l = 0, m = 0; i < p3.Length; i++, j++, h++, k++, l++, m++)
             {
                 string condition1 = p3[i];

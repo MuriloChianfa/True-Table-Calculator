@@ -455,7 +455,7 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 #endregion
                 #region FourPropositions
                 else if(amount == 4){
-
+                    
                     LogicalTable.ShowTable4();
 
                     Console.WriteLine("Enter The 1st Proposition:");
@@ -645,22 +645,62 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                         PrintPl(lengthExpression);
                         for(int i = 0; i < LogicalTable.result4Return.Length; i++)
                         {
-                            if(condition1.Length == 2)
-                                Console.Write("¦    {0}  ¦ ", possibility1[i]);
-                            else
-                                Console.Write("¦   {0}  ¦ ", possibility1[i]);
+                            //Console.ForegroundColor = ConsoleColor.Green;
+                            //Console.ResetColor();
+                            if(condition1.Length == 2){
+                                Console.Write("¦    ");
+                                if(possibility1[i] == "T")
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                else
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                Console.Write("{0}", possibility1[i]);
+                                Console.ResetColor();
+                                Console.Write("  ¦ ");
+                            }
+                            else{
+                                Console.Write("¦   ");
+                                if(possibility1[i] == "T")
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                else
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                Console.Write("{0}", possibility1[i]);
+                                Console.ResetColor();
+                                Console.Write("  ¦ ");
+                            }
                                 
-                            if(condition2.Length == 2)
-                                Console.Write("¦    {0}  ¦ ", possibility2[i]);
-                            else
-                                Console.Write("¦   {0}  ¦ ", possibility2[i]);
+                            if(condition2.Length == 2){
+                                Console.Write("¦    ");
+                                if(possibility2[i] == "T")
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                else
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                Console.Write("{0}", possibility2[i]);
+                                Console.ResetColor();
+                                Console.Write("  ¦ ");
+                            }
+                            else{
+                                Console.Write("¦   ");
+                                if(possibility2[i] == "T")
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                else
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                Console.Write("{0}", possibility2[i]);
+                                Console.ResetColor();
+                                Console.Write("  ¦ ");
+                            }
 
                             Console.Write("¦  ");
                             for (int j = 5; j < lengthExpression; j++)
                             {
                                 Console.Write(" ");
                             }
-                            Console.WriteLine("{0}     ¦", LogicalTable.result4Return[i]);
+                            if(LogicalTable.result4Return[i] == "T")
+                                Console.ForegroundColor = ConsoleColor.Green;
+                            else
+                                Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write("{0}", LogicalTable.result4Return[i]);
+                            Console.ResetColor();
+                            Console.WriteLine("     ¦");
                         }
                         PrintPl(lengthExpression);
 
@@ -1091,23 +1131,53 @@ namespace AdvancedCalculator.TrueTable.LogicalFunction {
                 PrintComPL(lengthExpression, lengthExpression2);
                 for(int i = 0; i < LogicalTable.result4Return.Length; i++)
                 {
+                    //Console.ForegroundColor = ConsoleColor.Green;
+                    //Console.ResetColor();
                     Console.Write("¦  ");
                     for (int j = 3; j < lengthExpression; j++)
                     {
                         Console.Write(" ");
                     }
-                    Console.Write("{0}     ¦ ", possibility1[i]);
+                    if(possibility1[i] == "T")
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    else
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("{0}", possibility1[i]);
+                    Console.ResetColor();
+                    Console.Write("     ¦ ");
 
                     //----------------------------
                         
-                    if(condition2.Length == 2)
-                        Console.Write("¦    {0}  ¦ ", possibility2[i]);
-                    else
-                        Console.Write("¦   {0}  ¦ ", possibility2[i]);
+                    if(condition2.Length == 2){
+                        Console.Write("¦    ");
+                        if(possibility2[i] == "T")
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        else
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("{0}", possibility2[i]);
+                        Console.ResetColor();
+                        Console.Write("  ¦ ");
+                    }
+                    else{
+                        Console.Write("¦   ");
+                        if(possibility2[i] == "T")
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        else
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("{0}", possibility2[i]);
+                        Console.ResetColor();
+                        Console.Write("  ¦ ");
+                    }
 
                     //--------------------------
 
-                    Console.Write("¦       {0}", LogicalTable.result4Return[i]);
+                    Console.Write("¦       ");
+                    if(LogicalTable.result4Return[i] == "T")
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    else
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("{0}", LogicalTable.result4Return[i]);
+                    Console.ResetColor();
                     for (int j = 6; j < lengthExpression2; j++)
                     {
                         Console.Write(" ");
