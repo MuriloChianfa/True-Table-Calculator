@@ -24,16 +24,16 @@
 
 ## 3 Propositions
 <p align="center">
-	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-1.png">
+	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-4.png">
 </p>
 
 ## 3 Propositions calculed
 <p align="center">
-	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-1.png">
+	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-5.png">
 </p>
 
 ## 3 Propositions continued
 <p align="center">
-	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-1.png">
+	<img src="https://github.com/MuriloChianfa/True-Table-Calculator/blob/master/Images/Image-6.png">
 </p>
 
