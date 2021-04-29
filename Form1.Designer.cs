@@ -1,4 +1,4 @@
-﻿namespace CalculadoraTabelaVerdade
+﻿namespace AdvancedCalculator
 {
     partial class Form1
     {
@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label LabelVersions;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            LabelVersions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,6 +50,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(12, 106);
             this.button1.Name = "button1";
@@ -60,6 +63,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(279, 106);
             this.button2.Name = "button2";
@@ -72,12 +76,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 54);
             this.label2.TabIndex = 4;
             this.label2.Text = "Criado por: \r\n             > Murilo Chianfa\r\n             > Marcelo Yida\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // LabelVersions
+            // 
+            LabelVersions.AutoSize = true;
+            LabelVersions.Cursor = System.Windows.Forms.Cursors.Hand;
+            LabelVersions.Font = new System.Drawing.Font("Goudy Stout", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LabelVersions.Location = new System.Drawing.Point(478, 224);
+            LabelVersions.Name = "LabelVersions";
+            LabelVersions.Size = new System.Drawing.Size(63, 16);
+            LabelVersions.TabIndex = 15;
+            LabelVersions.Text = "V 1.0®";
+            LabelVersions.Click += new System.EventHandler(this.LabelVersions_Click);
             // 
             // Form1
             // 
@@ -85,6 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
             this.ClientSize = new System.Drawing.Size(553, 249);
+            this.Controls.Add(LabelVersions);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

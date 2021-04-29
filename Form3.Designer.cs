@@ -1,4 +1,4 @@
-﻿namespace CalculadoraTabelaVerdade
+﻿namespace AdvancedCalculator
 {
     partial class Form3
     {
@@ -59,6 +59,7 @@
             // Enviar
             // 
             this.Enviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.Enviar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Enviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enviar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Enviar.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -89,6 +90,7 @@
             // srbr
             // 
             this.srbr.AutoSize = true;
+            this.srbr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbr.Location = new System.Drawing.Point(18, 82);
             this.srbr.Name = "srbr";
             this.srbr.Size = new System.Drawing.Size(30, 18);
@@ -100,6 +102,7 @@
             // srbnr
             // 
             this.srbnr.AutoSize = true;
+            this.srbnr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbnr.Location = new System.Drawing.Point(55, 81);
             this.srbnr.Name = "srbnr";
             this.srbnr.Size = new System.Drawing.Size(37, 18);
@@ -111,6 +114,7 @@
             // srbp
             // 
             this.srbp.AutoSize = true;
+            this.srbp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbp.Location = new System.Drawing.Point(18, 34);
             this.srbp.Name = "srbp";
             this.srbp.Size = new System.Drawing.Size(33, 18);
@@ -122,6 +126,7 @@
             // srbnp
             // 
             this.srbnp.AutoSize = true;
+            this.srbnp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbnp.Location = new System.Drawing.Point(55, 34);
             this.srbnp.Name = "srbnp";
             this.srbnp.Size = new System.Drawing.Size(40, 18);
@@ -133,6 +138,7 @@
             // srbq
             // 
             this.srbq.AutoSize = true;
+            this.srbq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbq.Location = new System.Drawing.Point(18, 58);
             this.srbq.Name = "srbq";
             this.srbq.Size = new System.Drawing.Size(33, 18);
@@ -144,6 +150,7 @@
             // srbnq
             // 
             this.srbnq.AutoSize = true;
+            this.srbnq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.srbnq.Location = new System.Drawing.Point(55, 57);
             this.srbnq.Name = "srbnq";
             this.srbnq.Size = new System.Drawing.Size(40, 18);
@@ -170,6 +177,7 @@
             // rbBicondicional
             // 
             this.rbBicondicional.AutoSize = true;
+            this.rbBicondicional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbBicondicional.Location = new System.Drawing.Point(6, 115);
             this.rbBicondicional.Name = "rbBicondicional";
             this.rbBicondicional.Size = new System.Drawing.Size(122, 18);
@@ -181,6 +189,7 @@
             // rbCondicional
             // 
             this.rbCondicional.AutoSize = true;
+            this.rbCondicional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbCondicional.Location = new System.Drawing.Point(6, 91);
             this.rbCondicional.Name = "rbCondicional";
             this.rbCondicional.Size = new System.Drawing.Size(112, 18);
@@ -192,6 +201,7 @@
             // rbDisjuncaoExclusiva
             // 
             this.rbDisjuncaoExclusiva.AutoSize = true;
+            this.rbDisjuncaoExclusiva.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbDisjuncaoExclusiva.Location = new System.Drawing.Point(6, 67);
             this.rbDisjuncaoExclusiva.Name = "rbDisjuncaoExclusiva";
             this.rbDisjuncaoExclusiva.Size = new System.Drawing.Size(164, 18);
@@ -203,6 +213,7 @@
             // rbDisjuncao
             // 
             this.rbDisjuncao.AutoSize = true;
+            this.rbDisjuncao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbDisjuncao.Location = new System.Drawing.Point(6, 44);
             this.rbDisjuncao.Name = "rbDisjuncao";
             this.rbDisjuncao.Size = new System.Drawing.Size(106, 18);
@@ -214,6 +225,7 @@
             // rbConjuncao
             // 
             this.rbConjuncao.AutoSize = true;
+            this.rbConjuncao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbConjuncao.Location = new System.Drawing.Point(6, 20);
             this.rbConjuncao.Name = "rbConjuncao";
             this.rbConjuncao.Size = new System.Drawing.Size(110, 18);
@@ -241,6 +253,7 @@
             // rbr
             // 
             this.rbr.AutoSize = true;
+            this.rbr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbr.Location = new System.Drawing.Point(18, 82);
             this.rbr.Name = "rbr";
             this.rbr.Size = new System.Drawing.Size(30, 18);
@@ -252,6 +265,7 @@
             // rbnr
             // 
             this.rbnr.AutoSize = true;
+            this.rbnr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbnr.Location = new System.Drawing.Point(55, 81);
             this.rbnr.Name = "rbnr";
             this.rbnr.Size = new System.Drawing.Size(37, 18);
@@ -263,6 +277,7 @@
             // rbp
             // 
             this.rbp.AutoSize = true;
+            this.rbp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbp.Location = new System.Drawing.Point(18, 34);
             this.rbp.Name = "rbp";
             this.rbp.Size = new System.Drawing.Size(33, 18);
@@ -274,6 +289,7 @@
             // rbnp
             // 
             this.rbnp.AutoSize = true;
+            this.rbnp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbnp.Location = new System.Drawing.Point(55, 34);
             this.rbnp.Name = "rbnp";
             this.rbnp.Size = new System.Drawing.Size(40, 18);
@@ -285,6 +301,7 @@
             // rbq
             // 
             this.rbq.AutoSize = true;
+            this.rbq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbq.Location = new System.Drawing.Point(18, 58);
             this.rbq.Name = "rbq";
             this.rbq.Size = new System.Drawing.Size(33, 18);
@@ -296,6 +313,7 @@
             // rbnq
             // 
             this.rbnq.AutoSize = true;
+            this.rbnq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbnq.Location = new System.Drawing.Point(55, 57);
             this.rbnq.Name = "rbnq";
             this.rbnq.Size = new System.Drawing.Size(40, 18);
@@ -307,6 +325,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;

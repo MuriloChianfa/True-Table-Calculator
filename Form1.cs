@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalculadoraTabelaVerdade
+namespace AdvancedCalculator
 {
     public partial class Form1 : Form
     {
@@ -39,6 +40,21 @@ namespace CalculadoraTabelaVerdade
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //Visiting The Owners Of Project
+            System.Diagnostics.Process.Start("https://github.com/MuriloChianfa");
+            System.Diagnostics.Process.Start("https://github.com/Kamikzr");
+            //Debug.Logger("Github Of Owners Opened");
+        }
+
+        private void LabelVersions_Click(object sender, EventArgs e)
+        {
+            //Visiting The Versions Of Project
+            System.Diagnostics.Process.Start("https://github.com/MuriloChianfa/AdvancedCalculator");
+            //Debug.Logger("Versions Of The Project Opened");
         }
     }
 }

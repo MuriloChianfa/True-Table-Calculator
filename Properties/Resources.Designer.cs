@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CalculadoraTabelaVerdade.Properties
+namespace AdvancedCalculator.Properties
 {
 
 
