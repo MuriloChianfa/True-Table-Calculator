@@ -1,25 +1,22 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-using AdvancedCalculator.Functions;
-using AdvancedCalculator.TrueTable;
-
-namespace AdvancedCalculator {
-    public class Program {
-        public static void Main() {
-            var menu = new MainMenu(new Dictionary<string, Action>() {
-                {"Calculator", Calculator.Exec},
-                {"BMI Calculator", BMICalculator.Exec},
-                {"Average Calculator", AverageCalculator.Exec},
-                {"Matrix Calculator", MatrixCalculator.Exec},
-                {"Area Calculator", AreaCalculator.Exec},
-                {"Interest Calculator", InterestCalculator.Exec},
-                {"Converter", Converter.Exec},
-                {"Multiplication Table", MultiplicationTable.Exec},
-                {"TrueTable", TrueTableMenu.Exec},
-            });
-
-            menu.SelecionarEExecutar();
+namespace CalculadoraTabelaVerdade
+{
+    static class Program
+    {
+        /// <summary>
+        /// Ponto de entrada principal para o aplicativo.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
