@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvancedCalculator
+namespace True_Table_Calculator
 {
     class Operations
     {

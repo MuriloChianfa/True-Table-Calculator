@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AdvancedCalculator
+namespace True_Table_Calculator
 {
     public partial class Continuar3 : Form
     {

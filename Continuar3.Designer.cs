@@ -1,4 +1,4 @@
-﻿namespace AdvancedCalculator
+﻿namespace True_Table_Calculator
 {
     partial class Continuar3
     {

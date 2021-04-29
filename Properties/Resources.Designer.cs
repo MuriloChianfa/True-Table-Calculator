@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AdvancedCalculator.Properties
+namespace True_Table_Calculator.Properties
 {
 
 

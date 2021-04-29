@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1826E66E-1F1A-4DC5-B35E-335DAEA79020}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AdvancedCalculator</RootNamespace>
-    <AssemblyName>AdvancedCalculator</AssemblyName>
+    <RootNamespace>True-Table-Calculator</RootNamespace>
+    <AssemblyName>True-Table-Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

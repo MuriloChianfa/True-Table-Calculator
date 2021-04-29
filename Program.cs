@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AdvancedCalculator
+namespace True_Table_Calculator
 {
     static class Program
     {

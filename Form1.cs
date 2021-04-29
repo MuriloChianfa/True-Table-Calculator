@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AdvancedCalculator
+namespace True_Table_Calculator
 {
     public partial class Form1 : Form
     {
@@ -53,7 +53,7 @@ namespace AdvancedCalculator
         private void LabelVersions_Click(object sender, EventArgs e)
         {
             //Visiting The Versions Of Project
-            System.Diagnostics.Process.Start("https://github.com/MuriloChianfa/AdvancedCalculator");
+            System.Diagnostics.Process.Start("https://github.com/MuriloChianfa/True_Table_Calculator");
             //Debug.Logger("Versions Of The Project Opened");
         }
     }
